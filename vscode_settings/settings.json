@@ -1,0 +1,254 @@
+{
+  "workbench.activityBar.visible": true,
+  
+  "workbench.colorCustomizations": {
+    "[Ayu dark]": {},
+    "editor.background": "#000000",
+    "breadcrumb.foreground": "#ffee00",
+    "editor.selectionBackground": "#494c4e",
+    "editor.selectionHighlightBackground": "#4e4d53",
+    "editorLineNumber.foreground": "#706a6a",
+    "editorLineNumber.activeForeground": "#ffffff",
+    "sideBarSectionHeader.foreground": "#d3c4c4",
+    "sideBarSectionHeader.background": "#110e18",
+    "sideBarTitle.foreground": "#464040",
+    "sideBar.foreground": "#ffffff",
+    "activityBar.foreground": "#ff0000",
+    "tab.inactiveForeground": "#ffffff80",
+    "tab.activeForeground": "#ffffff",
+    "editorIndentGuide.background": "#cc4a4a19",
+    "terminal.foreground": "#fffdfd"
+  },
+
+  "editor.tokenColorCustomizations": {
+
+    "strings": "#59d628",
+
+    "comments": "#756f6f",
+
+    "variables": {
+
+      "foreground": "#e69d80",
+
+      "fontStyle": "bold",
+
+    },
+
+    "functions": {
+
+      "foreground": "#e9c960",
+
+      "fontStyle": "bold",
+
+    },
+
+    "keywords": {
+
+      "foreground": "#cc4a4a",
+
+      "fontStyle": "bold",
+
+    },
+
+    "numbers": {
+
+      "foreground": "#fffb00",
+
+      "fontStyle": "bold",
+
+    },
+
+    "types": "#e4d6b0",
+
+    "textMateRules": [{
+
+        "scope": "constant.language",
+
+        "settings": {
+
+          "foreground": "#fbff00",
+
+          "fontStyle": "bold"
+
+        }
+
+      },
+
+      {
+
+        "scope": "meta.block",
+
+        "settings": {
+
+          "foreground": "#ffffff",
+
+          "fontStyle": "bold",
+
+        }
+
+      },
+
+      {
+
+        "scope": "keyword.operator",
+
+        "settings": {
+
+          "foreground": "#ffffff",
+
+          "fontStyle": "bold",
+
+        }
+
+      },
+
+      {
+
+        "scope": "variable.parameter",
+
+        "settings": {
+
+          "foreground": "#9598a5",
+
+          "fontStyle": "bold",
+
+        },
+
+
+
+      },
+
+      {
+
+        "scope": "support.constant",
+
+        "settings": {
+
+          "foreground": "#415edd",
+
+          "fontStyle": "bold",
+
+        },
+
+
+
+      },
+
+      {
+
+        "scope": "entity.name.tag",
+
+        "settings": {
+
+          "foreground": "#e7d7a9",
+
+          "fontStyle": "bold",
+
+        },
+
+
+
+      },
+
+      {
+
+        "scope": "entity.other.attribute-name",
+
+        "settings": {
+
+          "foreground": "#f99001",
+
+          "fontStyle": "bold",
+
+        },
+
+
+
+      },
+
+      {
+
+        "scope": "meta.tag",
+
+        "settings": {
+
+          "foreground": "#d8ad39",
+
+          "fontStyle": "bold",
+
+        },
+
+
+
+      }
+
+    ]
+
+  },
+
+  "editor.fontFamily": "Roboto Mono Thin for Powerline",
+
+  "editor.fontSize": 18,
+
+  "editor.wordWrap": "on",
+
+  "editor.cursorBlinking": "expand",
+
+  "editor.fontWeight": "600",
+
+  "terminal.integrated.cursorStyle": "line",
+
+  "cSpell.language": "en,en-US",
+
+  "editor.letterSpacing": -1.5,
+
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "terminal.integrated.fontSize": 16,
+
+  "terminal.integrated.fontFamily": "Roboto Mono Thin for Powerline",
+
+  "terminal.integrated.rendererType": "dom",
+
+  "emmet.triggerExpansionOnTab": true,
+
+  "editor.tabSize": 2,
+
+  "editor.detectIndentation": false,
+
+  // "materialTheme.fixIconsRunning": true,
+
+  "workbench.colorTheme": "Ayu Dark Bordered",
+
+  "breadcrumbs.enabled": true,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "theme-by-language.themes": {
+
+    "*": "Ayu Dark",
+
+    "python": "Ayu Dark Bordered",
+
+    "go": "Material Theme Ocean High Contrast"
+
+  },
+
+  "files.associations": {
+
+    "*.jsx": "javascriptreact",
+
+    "*.js": "javascript"
+
+  },
+
+  "[javascript]": {},
+  "python.jediEnabled": false,
+  "flow.useNPMPackagedFlow": true,
+  "javascript.validate.enable": false,
+  "window.zoomLevel": -1,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.iconTheme": "vscode-icons",
+
+}
