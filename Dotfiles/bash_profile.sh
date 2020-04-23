@@ -18,7 +18,8 @@ export HISTIGNORE="h"
 
 #Need this for NVM
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 # ====================
 # Aliases
 # ====================
@@ -97,8 +98,10 @@ alias gco='git co'
 alias gck='git checkout --'
 alias gcka='git checkout -- .'
 alias gsta='git stash'
-alias gstal='git stash list'
 alias gpsu='git push --set-upstream origin'
+alias gsl='git stash list'
+alias gsc='git stash clear'
+alias gba='git branch --all'
 
 alias grc='git rebase —continue'
 alias grom='git rebase -i —onto origin/master' # commit~1 
@@ -116,13 +119,28 @@ alias debug='node --inspect-brk'
 alias web='cd ~/Desktop/rx-web'
 alias pwa='cd ~/Desktop/mobile-web'
 alias oms='cd ~/Desktop/order-service'
-alias ecom='cd ~/Desktop/backend'
-alias rxos='cd ~/Desktop/rx-os-backend'
-alias yrp='yarn run precommit'
+alias dcup='docker-compose up'
+alias resetaws='eval $(blink aws session dev)'
 
-#Node Package Managment/Yarn
-alias yrd='yarn run dev'
-alias npmg='npm install -g'
+    #RXOS
+    alias rxosbe='cd ~/Desktop/rx-os-backend'
+    alias rxosfe='cd ~/Desktop/rx-os-frontend'
+    alias rungrx='pipenv run grx-db'
+    alias rxos-be='rungrx && SERVER_URLS_MODE=all pipenv run server'
+
+    #BACKEND
+    alias ecom='cd ~/Desktop/backend'
+    alias dcb='docker-compose exec develop bash'
+    alias ecomserv='python manage runserver -h 0.0.0.0 -p 5000'
+
+    #Node Package Managment/Yarn
+    alias yrd='yarn run dev'
+    alias yrp='yarn run precommit'
+    alias npmg='npm install -g'
+
+    #PIP Package managenment
+    alias pir='pip install -r requirements.txt'
+
 # ================
 # Application Aliases
 # ================
@@ -136,6 +154,17 @@ bind 'set completion-ignore-case on'
 # # make completions appear immediately after pressing TAB once
 bind 'set show-all-if-ambiguous on'
 bind 'TAB: menu-complete'
+
+# =================
+# Functions
+# =================
+
+# Get symlink for provided package
+function getsym() {
+  binary=$1
+
+  python -c "import os; print(os.path.realpath('/usr/local/bin/$binary'))"
+}
 
 # =================
 # Sourced Scripts
@@ -163,13 +192,6 @@ fi
 # if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
 #     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 # fi
-
-
-
-
-
-
-
 
 # Setting PATH for Python 3.8
 # The original version is saved in .bash_profile.pysave
