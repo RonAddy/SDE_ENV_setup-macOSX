@@ -9,15 +9,17 @@
     "editor.selectionHighlightBackground": "#4e4d53",
     "editorLineNumber.foreground": "#706a6a",
     "editorLineNumber.activeForeground": "#ffffff",
-    "sideBarSectionHeader.foreground": "#d3c4c4",
-    "sideBarSectionHeader.background": "#110e18",
-    "sideBarTitle.foreground": "#464040",
+    "sideBarSectionHeader.foreground": "#eddddd",
+    "sideBarSectionHeader.background": "#291313",
+    "sideBarTitle.foreground": "#ffffff",
     "sideBar.foreground": "#ffffff",
     "activityBar.foreground": "#ff0000",
-    "tab.inactiveForeground": "#ffffff80",
+    "tab.inactiveForeground": "#d6393980",
     "tab.activeForeground": "#ffffff",
     "editorIndentGuide.background": "#cc4a4a19",
-    "terminal.foreground": "#fffdfd"
+    "terminal.foreground": "#fffdfd",
+    "titleBar.activeBackground": "#000000cc",
+    "titleBar.activeForeground":"#ffffff",
   },
 
   "editor.tokenColorCustomizations": {
@@ -186,8 +188,6 @@
 
   },
 
-  "editor.fontFamily": "Roboto Mono Thin for Powerline",
-
   "editor.fontSize": 18,
 
   "editor.wordWrap": "on",
@@ -215,24 +215,13 @@
   "editor.tabSize": 2,
 
   "editor.detectIndentation": false,
-
-  // "materialTheme.fixIconsRunning": true,
-
+  
   "workbench.colorTheme": "Ayu Dark Bordered",
 
   "breadcrumbs.enabled": true,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
 
-  "theme-by-language.themes": {
-
-    "*": "Ayu Dark",
-
-    "python": "Ayu Dark Bordered",
-
-    "go": "Material Theme Ocean High Contrast"
-
-  },
 
   "files.associations": {
 
@@ -243,12 +232,13 @@
   },
 
   "[javascript]": {},
-  "python.jediEnabled": false,
-  "flow.useNPMPackagedFlow": true,
   "javascript.validate.enable": false,
   "window.zoomLevel": -1,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.iconTheme": "vscode-icons",
-
+  "workbench.fontAliasing": "antialiased",
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Roboto Mono Thin for Powerline",
+  "window.titleBarStyle": "custom",
+  "workbench.iconTheme": "material-icon-theme"
 }
