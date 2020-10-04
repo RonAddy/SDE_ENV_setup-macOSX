@@ -1,6 +1,3 @@
-# Source aliases
-. ~/.bash_aliases
-
 # ====================
 # Funtions
 # ====================
@@ -64,4 +61,9 @@ fi
 # bash/zsh completion support for core Git.
 if [ -f ~/.git-completion.bash ]; then
   source ~/.git-completion.bash
+fi
+
+# Source aliases
+if [ -f ~/.bash_aliases ]; then
+  source ~/.bash_aliases
 fi

@@ -1,3 +1,5 @@
 . ~/.profile
-. ~/.bashrc
 . ~/.bash_prompt
+. ~/.bashrc
+
+

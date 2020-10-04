@@ -80,6 +80,7 @@ alias gdf='git diff master --'
 #Bash prompt and profile shortcuts
 alias bprof='code ~/.bash_profile'
 alias bprom='code ~/.bash_prompt'
+alias profs='code ~/.bash_prompt ~/.bash_profile ~/.profile ~/.bash_aliases ~/.bashrc'
 
 #Node inspector
 alias debug='node --inspect-brk'
